@@ -1,0 +1,198 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.logo img {
+    max-width: 100px;
+    max-width: 100%;   /* Ensure the image doesn't exceed its container's width */
+    height: auto;      /* Maintain the aspect ratio of the image */
+    margin-left: -10%; /* Adjust the margin as needed */
+    width: 80%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('images/McGregor_One_Apartment_Photo.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 24px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Style the "About Us" section */
+.about-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.about-section h2 {
+    font-size: 24px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style Downloads section */
+#downloads {
+    padding: 40px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 0 0 calc(33.33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-details {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-status {
+    font-weight: bold;
+    color: green;
+}
+
+.project-map {
+    margin-top: 10px;
+}
+
+.image-container {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.image-container:hover {
+    transform: scale(1.5);
+}
+
+#downloads h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#downloads ul {
+    list-style: none;
+}
+
+#downloads ul li {
+    margin-bottom: 10px;
+}
+
+#downloads a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Style Contact Us section */
+#contacts {
+    background-color: #f7f7f7;
+    padding: 40px;
+    text-align: center;
+}
+
+#contacts h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contacts p {
+    font-size: 16px;
+    color: #666;
+}
+
+#contacts a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 18px;
+    }
+    
+    .project {
+        flex: 0 0 calc(50% - 20px);
+    }
+    
+    #downloads ul li {
+        margin-bottom: 5px;
+    }
+}
